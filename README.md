@@ -17,10 +17,14 @@ ane-cnabf-comparador-rr/
 │   ├── 03_procesados/            # Resultado del script de limpieza (Reporte_Limpio_RR.docx)
 │   └── 04_informes_finales/      # Resultado de la IA (Informe_Ejecutivo_Cambios_RR.docx)
 │
+├── outputs/
+│   ├── diferencias_CNABF_RR.xlsx/ # excel con resultados de la comparacion de compare_tables.py
+|
 ├── src/                          # Código fuente modularizado
 │   ├── __init__.py
 │   ├── cleaner.py                # Lógica de limpieza de filas (Regex y manipulación XML)
 │   └── analyzer.py               # Lógica de conexión con Gemini y generación de Word
+│   └── compare_tables.py         # Compara tablas de dos documentos especificos: data/01_originales_rr/2400594-RR-Vol 1-S-A5_removed.pdf y data/01_originales_rr/CNABF2026 (1)_removed.pdf
 │
 ├── .env.example                  # Plantilla de variables de entorno
 ├── .gitignore                    # Archivos a ignorar en Git (ej. .env, carpetas __pycache__)
